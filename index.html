@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bicaku Games, Developer: Bekim Bicaku.">
     <meta name="keywords" content="HTML,CSS,JavaScript">
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="icon" href="favicon (2).ico" type="image/x-icon">
     <title>Bicaku Games</title>
 </head>
 <body >
     
-    <header>
+     <!--<header>
         <h1>Bicaku Games</h1>
         <nav>
             <div class="menu-icon">
@@ -26,17 +28,97 @@
             </ul>
             
         </nav>
-    </header><br><br>
+    </header><br><br>-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #000000; color: #000000;" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#games">Our Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav><br>
+    
+    
 
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
 
-    <div class="flluska-container">
+        <div class="carousel-inner">
+          <div class="carousel-item active align-items-center" >
+            <video autoplay loop muted width="50%" class="d-block  w-50 h-50 mx-auto" id="fish">
+                <source src="Gometry Crash gameplay video..mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Geometry Crach</h5>
+            </div>
+          </div>
+          <div class="carousel-item align-items-center">
+            <video autoplay loop muted width="50%" class="d-block w-50 h-50 mx-auto">
+                <source src="Geometry War, play now available on play store..mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Geometry War</h5>
+            </div>
+          </div>
+          <div class="carousel-item align-items-center">
+            <video autoplay loop muted width="50%" class="d-block w-50 h-10 mx-auto" id="fish">
+                <source src="Flappy Fish 3D, play now.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Flappy Fish 3D</h5>
+            </div>
+          </div>
+          <div class="carousel-item align-items-center">
+            <video autoplay loop muted width="50%" class="d-block w-50 h-50 mx-auto" >
+                <source src="Dizzy Car.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Dizzy Car</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div><br>
+    
+     <!--<div class="flluska-container">
         <div class="flluska"> <img src="trekendsh.png" alt=""></div>
         <div class="flluska"><img src="katror.png" alt=""></div>
         <div class="flluska"><img src="x.png" alt=""></div>
         <div class="flluska"><img src="rreth.png" alt=""></div>
-    </div>
+    </div>-->
 
-    <section id="home" class="text-video-section">
+   <!-- <section id="home" class="text-video-section">
         <div class="paragraph">
             <p>
                 <b>Welcome to Bicaku Games</b><br><br>
@@ -46,9 +128,56 @@
                 <source src="car.mp4" type="video/mp4">
             </video>
         </div>
-    </section><br><br><br>
+    </section><br><br><br>-->
+    
+    <div id="home" class="card mb-3 mx-auto border border-success p-2 mb-2 " style="max-width: 80%; max-height: 80%;" >
+        <div class="row g-0 align-items-center">
+          <div class="col-md-4">
+            <video autoplay loop muted width="100%" height="100%">
+               <source src="fish.mp4" type="video/mp4" class="img-fluid rounded-start" alt="...">
+            </video>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Welcome to Bicaku Games</h5>
+              <p class="card-text"> We hope you find our games enjoyable and inspiring! Explore our world of games and become part of the Bicaku Games adventure. Have fun and get ready for unforgettable experiences!</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated December 2023</small></p>
+            </div>
+          </div>
+        </div>
+    </div><br>
 
-    <section id="about" class="text-video-section">
+    <div id="about" class="accordion mx-3" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <strong class="text-primary">About Us</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Bicaku Games is a game studio based in Albania. We are focused on creating and developing the best games and pleasing our users to the maximum. Studio is founded in 2021, till then we are working hard to not disappoint our users in the next games. <br>
+                Our team consists of passionate individuals dedicated to innovation and creativity in the gaming industry. We strive to deliver immersive experiences and push the boundaries of what gaming can offer. Join us on our journey to redefine gaming excellence.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong class="text-primary">Our Mission</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                With perseverance and strong will , with great desire to create great things and to develop new games and technologies , Biçaku Games hopes to become the largest gaming company in the region and beyond. <br>
+                We are focused in delivering high-quality games that meet or exceed industry standards. This includes attention to detail in graphics, sound, gameplay mechanics, and overall user experience. <br>
+                We want to build a strong community of players and fostering collaboration within the development team.
+            </div>
+          </div>
+        </div>
+    </div><br><br>
+
+    <!--<section id="about" class="text-video-section">
         <div class="paragraph">
             <video autoplay loop muted width="50%"  class="fish">
                 <source src="fish.mp4" type="video/mp4">
@@ -57,11 +186,13 @@
                 <b>About Us</b><br><br>
 
                 Bicaku Games is a game studio based in Albania. We are focused on creating and developing the best games and pleasing our users to the maximum. Studio is founded in 2021, till then we are working hard to not disappoint our users in the next games. <br><br>
-                Our team consists of passionate individuals dedicated to innovation and creativity in the gaming industry. We strive to deliver immersive experiences and push the boundaries of what gaming can offer. Join us on our journey to redefine gaming excellence.
             </p>
             
         </div>
-    </section><br>
+    </section>-->
+    
+    <!--<section><div><p class="uniquepara">Our team consists of passionate individuals dedicated to innovation and creativity in the gaming industry. We strive to deliver immersive experiences and push the boundaries of what gaming can offer. Join us on our journey to redefine gaming excellence.</p>
+    </div></section>
 
     <section id="about" class="text-video-section">
         <div class="paragraph">
@@ -69,8 +200,7 @@
                 <b>Our Mission</b><br><br>
 
                 With perseverance and strong will , with great desire to create great things and to develop new games and technologies , Biçaku Games hopes to become the largest gaming company in the region and beyond. <br><br>
-                We are focused in delivering high-quality games that meet or exceed industry standards. This includes attention to detail in graphics, sound, gameplay mechanics, and overall user experience. <br>
-                We want to build a strong community of players and fostering collaboration within the development team.
+                
             </p>
             <video autoplay loop muted width="50%" >
                 <source src="geometryVid.mp4" type="video/mp4">
@@ -79,48 +209,62 @@
             
         </div>
     </section><br>
-    
-
-    <section id="games">
-        <h2>Our Games</h2>
-       
-        <div class="photo-links">
-            <a href="https://play.google.com/store/apps/details?id=com.Bicaku.DizzyCar&hl=en&gl=US" target="_blank">
-                <img src="Dizzy.png" >
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.BicakuGames.FlappyFish3D&hl=en&gl=US" target="_blank">
-                <img src="Fish.png" >
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.bicakugames.geometrywar&hl=en&gl=US" target="_blank">
-                <img src="GeometryIcon.png" >
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.bicakugames.geometrycrach&hl=en&gl=US" target="_blank">
-                <img src="crashIcon.png" >
-            </a>
+    <section>
+        <div>
+            <p class="uniquepara">We are focused in delivering high-quality games that meet or exceed industry standards. This includes attention to detail in graphics, sound, gameplay mechanics, and overall user experience. <br>
+                We want to build a strong community of players and fostering collaboration within the development team.</p>
         </div>
-    </section>
-        <section id="submit-game-button">
-        <a href="submit-game.html" class="submit-button">Submit Your Game</a>
-    </section><br>
+    </section>-->
+
+
+    <div class="container text-center" id="games">
+      <h2 class="text-primary bg-white">Our Games</h2>
+
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="p-3"><a href="https://play.google.com/store/apps/details?id=com.Bicaku.DizzyCar&hl=en&gl=US" target="_blank">
+            <img src="Dizzy.png">
+        </a></div>
+        </div>
+        <div class="col-6">
+          <div class="p-3"><a href="https://play.google.com/store/apps/details?id=com.BicakuGames.FlappyFish3D&hl=en&gl=US" target="_blank">
+            <img src="Fish.png" >
+        </a></div>
+        </div>
+        <div class="col-6">
+          <div class="p-3"><a href="https://play.google.com/store/apps/details?id=com.bicakugames.geometrycrach&hl=en&gl=US" target="_blank">
+            <img src="crashIcon.png" >
+        </a></div>
+        </div>
+        <div class="col-6">
+          <div class="p-3"><a href="https://play.google.com/store/apps/details?id=com.bicakugames.geometrywar&hl=en&gl=US" target="_blank">
+            <img src="GeometryIcon.png" >
+        </a></div>
+        </div>
+      </div>
+    </div><br>
 
     
-    <section id="team" class="text-image-section">
-        <h2>Team</h2>
-        <div class="tmember1">
-            <div class="team-member" id="member1">
-                <a href="https://al.linkedin.com/in/bekim-bi%C3%A7aku-aa733a1a2?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
-                    <img class="teamimage1" src="developer.jpg" alt="Bekim Bicaku" >
-                </a>
-                <div class="member-info">
-                    <h3>Bekim Bicaku</h3>
-                    <p class="teamText">Founder & Game Developer</p>
-                </div>
-            </div>
-        </div>
-       
+    <h2 class="mx-3 text-primary bg-white text-center"><p class="mx-3">Team</p></h2><br>
+    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded mx-3" style="width: 18rem;" id="team">
+      
+      <a href="https://al.linkedin.com/in/bekim-bi%C3%A7aku-aa733a1a2?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
+        <img src="developer.jpg" class="card-img-top" alt="Bekim Bicaku">
+      </a>
+      
+      <div class="card-body">
+        <h3>Bekim Bicaku</h3>
+        <p class="card-text">Founder & Game Developer</p>
+      </div>
+    </div>
+    <section>
+      <div class='air air1'></div>
+      <div class='air air2'></div>
+      <div class='air air3'></div>
+      <div class='air air4'></div>
     </section>
-
-    <section id="contact">
+    
+    <!--<section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:bicakugames@gmail.com" class="email">bicakugames@gmail.com</a></p>
         <div class="social-icons">
@@ -134,8 +278,38 @@
     <footer>
         <p class="fText">&copy; 2023 Bicaku Games. All rights reserved. 
             <a href="privacy.html" class="privacy">Privacy</a></p>
+    </footer>-->
+    <!--<script src="menu.js"></script>-->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-md-1">
+            <h4>Quick Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#games">Our Games</a></li>
+              <li><a href="#team">Team</a></li>
+            </ul>
+            <h6>Durres, Albania, 2001</h6>
+          </div>
+          <div class="col-md-6 order-md-2">
+            <h4 class="text-primary">Connect With Us</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://www.youtube.com/@bicakugames8807" class="text-white"><i class="fab fa-facebook-f"></i> YouTube <img src="youtube.png" alt="YouTube" width="4%" height="4%" class="mx-3"></a></li>
+              <li><a href="https://www.linkedin.com/company/bi%C3%A7aku-games/?viewAsMember=true" class="text-white"><i class="fab fa-twitter"></i> LinkedIn <img src="linkedin.png" alt="LinkedIn" width="3%" height="2%" class="mx-3"></a></li>
+              <li><a href="https://www.instagram.com/bicakugames" class="text-white"><i class="fab fa-instagram"></i> Instagram <img src="instagram.png" alt="Instagram" width="3%" height="3%" class="mx-3"></a></li>
+            </ul>
+          </div>
+        </div><br>
+        <p class="text-center">&copy; 2023 Bicaku Games. All rights reserved. 
+          <a href="privacy.html" class="privacy">Privacy</a></p>
+      </div>
     </footer>
-    <script src="menu.js"></script>
-
-</body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
 </html>
